@@ -1,7 +1,7 @@
 #!/bin/bash -x
 echo "Welcome"
 
-<<<<<<< HEAD
+
 read -p "Enter First name " Firstname
 pattern="^[A-Z]{3,}$"
 if [[ $Firstname =~  $pattern ]]
@@ -14,20 +14,20 @@ if [[ $Lastname =~  $pattern ]]
 then
         echo $Lastname
 
->>>>>>> UC2
+
 else
         echo "Invalid"
 fi
->>>>>>> UC3
+
 read -p "Enter word to validate email pattern " EmailID
-pattern="^[a-zA-z]+([._][a-z0-9]+)?@[a-z]+.[a-z]+([.][a-z]+)$"
+pattern='^[a-c]{3}([.|-|+]*[0|1]+){0,3}@[a-z0-9]+.[a-z]+([.][a-z]+)?$'
 if [[ $EmailID =~  $pattern ]]
 then
         echo $EmailID
 else
         echo "Invalid"
 fi
->>>>>>> UC4
+
 
 read -p "Enter phone number  " phoneno
 pattern="^[0-9][1-9]" "[0-9]{10}"
@@ -37,7 +37,7 @@ then
 else
         echo "Invalid"
 fi
->>>>>>>> UC5
+
 
 read -p "Enter Password  " Password
 passwordlength=[\$.#@a-zA-Z0-9]{8}[a-zA-Z]*
