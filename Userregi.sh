@@ -1,9 +1,9 @@
 #!/bin/bash -x
-read -p "Enter phone number  " phoneno
-pattern="^[0-9][1-9]" "[0-9]{10}"
-if [[ $phoneno =~  $pattern ]]
+read -p "Enter Password  " Password
+passwordlength=[\$.#@a-zA-Z0-9]{8}[a-zA-Z]*
+if [[ $Password =~  $passwodlength ]]
 then
-        echo $phoneno
+        echo "password=" $Password****
 else
         echo "Invalid"
 fi
