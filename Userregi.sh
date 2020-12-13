@@ -1,9 +1,9 @@
 #!/bin/bash -x
-read -p "Enter phone number  " phoneno
-pattern="^[0-9][1-9]" "[0-9]{10}"
-if [[ $phoneno =~  $pattern ]]
+read -p "Enter Password with one upper case  " password
+PasswordUpper=[a-zA-Z]*[A-Z]+[a-zA-Z]*
+if [[ $password =~  $PasswordUpper ]]
 then
-        echo $phoneno
+        echo "Password=" $password****
 else
         echo "Invalid"
 fi
