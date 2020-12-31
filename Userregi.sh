@@ -5,6 +5,7 @@
 echo "Welcome"
 =======
 #!/bin/bash -x
+<<<<<<< HEAD
 ##Check last name is valid or not
 ##Take input from user
 read -p "Enter last name " Lastname
@@ -38,8 +39,17 @@ read -p "Enter phone number  " phoneno
 pattern="^[0-9][1-9]" "[0-9]{10}"
 ##Computation
 if [[ $phoneno =~  $pattern ]]
+=======
+##Create predefined rule-1 for password
+##Taking input from user
+read -p "Enter Password  " Password
+##Create pattern for password for rule-1
+passwordlength=[\$.#@a-zA-Z0-9]{8}[a-zA-Z]*
+##Computation
+if [[ $Password =~  $passwodlength ]]
+>>>>>>> 5_Rule1forpassword_UC5
 then
-        echo $phoneno
+        echo "password=" $Password****
 else
         echo "Invalid"
 fi
