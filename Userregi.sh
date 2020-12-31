@@ -8,6 +8,7 @@ echo "Welcome"
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ##Check last name is valid or not
 ##Take input from user
 read -p "Enter last name " Lastname
@@ -74,6 +75,18 @@ if [[ $password =~  $pattern ]]
 then
         echo "Password = "$password****
 >>>>>>> 7_Rule3foratleastonenumber_UC7
+=======
+##Creating password with at least special character
+##Taking input from user
+read -p "Enter password at least one character " password
+##Generating pattern for password
+pattern="[a-zA-Z0-9]*[#|\$|\@|\!]+[a-zA-Z0-9]*"
+##Computation
+if [[ $password =~ $pattern ]]
+then
+        echo "Password = " $password******
+
+>>>>>>> 8_Ruleforspecialchar_UC8
 else
         echo "Invalid"
 fi
