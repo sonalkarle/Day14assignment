@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 echo "Welcome"
 =======
 #!/bin/bash -x
@@ -25,6 +26,14 @@ then
 read -p "Enter word to validate email pattern " EmailID
 ##Creates pattern for email id
 pattern="^[a-zA-z]+([._][a-z0-9]+)?@[a-z]+.[a-z]+([.][a-z]+)$"
+=======
+#!/bin/bash -x
+##Create sample email ID
+##Taking input from user
+read -p "Enter word to validate email pattern " EmailID
+##Generating pattern for email ID
+pattern='^[a-c]{3}([.|-|+]*[0|1]+){0,3}@[a-z0-9]+.[a-z]+([.][a-z]+)?$'
+>>>>>>> 9_Emailsample_UC9
 ##Computation
 if [[ $EmailID =~  $pattern ]]
 then
@@ -32,6 +41,7 @@ then
 else
         echo "Invalid"
 fi
+<<<<<<< HEAD
 >>>>>>> 3_Validemail_UC3
 =======
 #!/bin/bash -x
@@ -112,3 +122,5 @@ else
 	echo "Invalid"
 fi
 >>>>>>> 1_FirstName_UC1
+=======
+>>>>>>> 9_Emailsample_UC9
