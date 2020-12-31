@@ -7,6 +7,7 @@ echo "Welcome"
 #!/bin/bash -x
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ##Check last name is valid or not
 ##Take input from user
 read -p "Enter last name " Lastname
@@ -62,6 +63,17 @@ if [[ $password =~  $Passwordupper ]]
 then
         echo "Password=" $password****
 >>>>>>> 6_Uppercasepassword_UC6
+=======
+##Create password rule-3 at least one number in password
+##Taking input from User
+read -p "Enter password with at least one number  " password
+##Generating pattern for password
+pattern=[a-zA-Z0-9]*[0-9]+[a-zA-Z0-9]*
+##Computation
+if [[ $password =~  $pattern ]]
+then
+        echo "Password = "$password****
+>>>>>>> 7_Rule3foratleastonenumber_UC7
 else
         echo "Invalid"
 fi
