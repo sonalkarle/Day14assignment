@@ -6,6 +6,7 @@ echo "Welcome"
 =======
 #!/bin/bash -x
 <<<<<<< HEAD
+<<<<<<< HEAD
 ##Check last name is valid or not
 ##Take input from user
 read -p "Enter last name " Lastname
@@ -50,6 +51,17 @@ if [[ $Password =~  $passwodlength ]]
 >>>>>>> 5_Rule1forpassword_UC5
 then
         echo "password=" $Password****
+=======
+##Creating Rule-2 at least one Upper case
+##Taking input from user
+read -p "Enter Password with one upper case  " password
+##Create pattern for Rule-2 at least one Upper case
+Passwordupper=[a-zA-Z]*[A-Z]+[a-zA-Z]*
+##Computation
+if [[ $password =~  $Passwordupper ]]
+then
+        echo "Password=" $password****
+>>>>>>> 6_Uppercasepassword_UC6
 else
         echo "Invalid"
 fi
